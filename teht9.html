@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tehtävä 9</title>
+</head>
+<body>
+
+<form action="http://codez.savonia.fi/jussi/api/test.php" method="get">
+
+<table>
+
+<tr>
+<td>Oppilaitos:</td>
+<td><input type="text" name="oppilaitos" value="Savonia AMK" readonly></td>
+</tr>
+
+<tr>
+<td>Nimi:</td>
+<td><input type="text" name="nimi"></td>
+</tr>
+
+<tr>
+<td>Vuosikurssi:</td>
+<td><input type="password" name="vuosikurssi"></td>
+</tr>
+
+<tr>
+<td>Kurssin nimi:</td>
+<td>
+<select name="course">
+<option>Web-ohjelmointi 1</option>
+<option>Matematiikka</option>
+<option>Fysiikka</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Kurssin tyyppi:</td>
+<td>
+<select name="tyyppi">
+<option>Lähiopetus</option>
+<option>Etäopetus</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Sukupuoli:</td>
+<td>
+<input type="radio" name="sukupuoli"> Mies
+<input type="radio" name="sukupuoli"> Nainen
+<input type="radio" name="sukupuoli"> Muu
+</td>
+</tr>
+
+<tr>
+<td>Harrastukset:</td>
+<td>
+<input type="checkbox" name="hobbies"> Pelaaminen<br>
+<input type="checkbox" name="hobbies"> Lenkkely<br>
+<input type="checkbox" name="hobbies"> Kuntosali<br>
+<input type="checkbox" name="hobbies"> Lukeminen
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+<input type="reset" value="Tyhjennä">
+<input type="submit" value="Lähetä">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>

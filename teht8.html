@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tehtävä 8</title>
+</head>
+<body>
+
+<form action="http://codez.savonia.fi/jussi/api/test.php" method="get">
+
+Oppilaitos:
+<input type="text" name="oppilaitos" value="Savonia AMK" readonly><br><br>
+
+Nimi:
+<input type="text" name="nimi"><br><br>
+
+Vuosikurssi:
+<input type="password" name="vuosikurssi"><br><br>
+
+Kurssin nimi:
+<select name="course">
+<option>Web-ohjelmointi 1</option>
+<option>Matematiikka</option>
+<option>Fysiikka</option>
+</select><br><br>
+
+Kurssin tyyppi:
+<select name="tyyppi">
+<option>Lähiopetus</option>
+<option>Etäopetus</option>
+</select><br><br>
+
+Sukupuoli:
+<input type="radio" name="sukupuoli"> Mies
+<input type="radio" name="sukupuoli"> Nainen
+<input type="radio" name="sukupuoli"> Muu<br><br>
+
+Harrastukset:<br>
+<input type="checkbox" name="hobbies"> Pelaaminen<br>
+<input type="checkbox" name="hobbies"> Lenkkely<br>
+<input type="checkbox" name="hobbies"> Kuntosali<br>
+<input type="checkbox" name="hobbies"> Lukeminen<br><br>
+
+<input type="reset" value="Tyhjennä">
+<input type="submit" value="Lähetä">
+
+</form>
+
+</body>
+</html>

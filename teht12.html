@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 12</title>
+    <style>
+        body {
+            margin: 20px;
+            background: white;
+            font-family: serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr 160px;
+            grid-template-areas:
+                "header header header header"
+                "nav box1 box2 ads"
+                "footer footer footer footer";
+            gap: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background: gold;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            grid-area: nav;
+            background: gold;
+            padding: 20px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .box1 {
+            grid-area: box1;
+        }
+
+        .box2 {
+            grid-area: box2;
+        }
+
+        .content {
+            background: gold;
+            padding: 20px;
+        }
+
+        .innerbox {
+            border: 1px solid black;
+            padding: 10px;
+            background: gold;
+        }
+
+        .ads {
+            grid-area: ads;
+            background: gold;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .adbox {
+            border: 1px solid black;
+            padding: 20px 10px;
+            background: gold;
+            text-align: center;
+        }
+
+        footer {
+            grid-area: footer;
+            background: gold;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Welcome to Savonia</header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Studying</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Government</a></li>
+                <li><a href="#">Spare time</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+        </nav>
+
+        <div class="content box1">
+            <div class="innerbox">
+                Grid includes an intuitive "ASCII art" syntax where you can virtually
+                "see" the layout within your code, so this makes it extremely easy
+                to create and modify to your layout. Even major changes can be done
+                within a few seconds. This intuitive syntax also helps with responsive
+                web design. Creating different layouts for different devices becomes
+                quite trivial when using grid.
+            </div>
+        </div>
+
+        <div class="content box2">
+            <div class="innerbox">
+                Grid items can become grids themselves with CSS grid layout.
+                You can then place grid items inside the grid item, therefore
+                creating a nested grid. To create a nested grid, all you have to
+                do is apply display: grid (or display: inline-grid) to the grid
+                item and it becomes a grid. You can also apply display: subgrid
+                to create a subgrid. See below for more information on subgrids.
+            </div>
+        </div>
+
+        <div class="ads">
+            <div class="adbox">Mainosasiaa ....</div>
+            <div class="adbox">Mainosasiaa ....</div>
+        </div>
+
+        <footer>Contact information</footer>
+    </div>
+</body>
+</html>

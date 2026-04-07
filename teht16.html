@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tehtävä 16</title>
+
+<style>
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    width: 300px;
+}
+
+label {
+    text-align: right;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+</style>
+
+</head>
+<body>
+
+<form>
+
+<h2>Syötä ilmoittautumistiedot</h2>
+
+<div class="row">
+<label>Nimi:</label>
+<input type="text">
+</div>
+
+<div class="row">
+<label>Vuosikurssi:</label>
+<input type="password">
+</div>
+
+<div class="row">
+<label>Oppilaitos:</label>
+<input type="text" value="Savonia AMK">
+</div>
+
+<div class="row">
+<label>Kurssin nimi:</label>
+<select>
+<option>TKJ</option>
+</select>
+</div>
+
+<div class="row">
+<label>Kurssin toteutus:</label>
+<select>
+<option>lähiopetus</option>
+</select>
+</div>
+
+<div class="row">
+<label>Sukupuoli:</label>
+<div>
+<input type="radio"> mies
+<input type="radio"> nainen
+</div>
+</div>
+
+<div class="row">
+<label>Harrastukset:</label>
+<div>
+<input type="checkbox"> ATK
+<input type="checkbox"> pelit
+</div>
+</div>
+
+<div style="display:flex; justify-content:space-between;">
+<button type="reset">Tyhjennä</button>
+<button type="submit">Lähetä</button>
+</div>
+
+</form>
+
+</body>
+</html>
